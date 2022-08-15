@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>Sarıhan Chef</title>
+     <link rel="icon" href="data:image/jpeg;base64,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"/>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/animate.css">
+     <link rel="stylesheet" href="css/owl.carousel.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+     <link rel="stylesheet" href="css/magnific-popup.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/templatemo-style.css">
+
+</head>
+<body>
+
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+
+               <span class="spinner-rotate"></span>
+               
+          </div>
+     </section>
+
+
+     <!-- MENU -->
+     <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                    <a href="index.html" class="navbar-brand">Sarıhan <span>.</span> Gusto</a>
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-nav-first">
+                         <li><a href="#home" class="smoothScroll">Anasayfa</a></li>
+                         <li><a href="#about" class="smoothScroll">Hakkımızda</a></li>
+                         <li><a href="#menu" class="smoothScroll">Menü</a></li>
+                         <li><a href="#contact" class="smoothScroll">İletişim</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                         <li><a href="#">Hemen Arayın! <i class="fa fa-phone"></i> (0212) 358 48 48</a></li>
+                         <a href="#footer" class="section-btn">Rezervasyon</a>
+                    </ul>
+               </div>
+
+          </div>
+     </section>
+
+
+     <!-- HOME -->
+     <section id="home" class="slider" data-stellar-background-ratio="0.5">
+          <div class="row">
+
+                    <div class="owl-carousel owl-theme">
+                         <div class="item item-first">
+                              <div class="caption">
+                                   <div class="container">
+                                        <div class="col-md-8 col-sm-12">
+                                             <h3>Sarıhan Chef &amp; Restaurant</h3>
+                                             <h1>Lezzetlerimiz unutulmaz bir deneyim sunmaktır</h1>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="item item-second">
+                              <div class="caption">
+                                   <div class="container">
+                                        <div class="col-md-8 col-sm-12">
+                                             <h3>Lezzetli İşkembe</h3>
+                                             <h1>En iyi yemek kalitesi de burada olabilir!</h1>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="item item-third">
+                              <div class="caption">
+                                   <div class="container">
+                                        <div class="col-md-8 col-sm-12">
+                                             <h3>Şehirdeki Yeni Restoran</h3>
+                                             <h1>Her pazar ve Cuma özel menülerimizin tadını çıkarın</h1>
+                                             <a href="#contact" class="section-btn btn btn-default smoothScroll">Rezervasyon</a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+          </div>
+     </section>
+
+
+     <!-- ABOUT -->
+     <section id="about"  >
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-6 col-sm-12">
+                         <div class="about-info">
+                              <div class="section-title wow fadeInUp" data-wow-delay="0.2s">
+                                   <h4>HİKAYEMİZİ OKUYUN</h4>
+                                   <h2>1970'dan Beri Lezzetli Yemekler Yapıyoruz.</h2>
+                              </div>
+
+                              <div class="wow fadeInUp" data-wow-delay="0.4s">
+                                   <p>Türk mutfağının en ilginç lezzet grubu olan ‘sakatat’larını uluslararası ‘hijyen sertifikalarını’ da alarak yeni bir klasmana taşıyan girişimcilerden Adnan Sarıhan, Etiler’de Sabancı Ailesi’nden kiraladığı 1000 metrekarelik bir mekanda 1.5 milyon dolarlık yatırımla, sosyeteye ‘işkembe çorbası’ satmaya başladı. Bayburt’ta dedesi ve babasının hayvancılık yaptığını belirten ve 1970’lerin başında İstanbul ve Almanya’ya uzanan maceradan sonra ‘çorbacı olmaya’ karar verdiğini anlatan Sarıhan Gusto'nun sahibi Adnan Sarıhan, Bakırköy İncirli’deki 450 metrekarelik tek restoranda haftasonları 1500-2 bin kişilik bir müşteri kitlesini ağırladığını söylüyor.</p>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12" data-stellar-background-ratio="0.5">
+                         <div class="wow fadeInUp about-image" data-wow-delay="0.6s">
+                              <img src="images/kapak1.jpg" class="img-responsive" alt="">
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </section>
+
+     <!-- MENU-->
+     <section id="menu" class="slider" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+                              <h2>Menülerimiz</h2>
+                              <h4>Kebaplar &amp; Çorbalar</h4>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!-- MENU THUMB -->
+                         <div class="menu-thumb">
+                              <a href="images/menu-image3.jpg" class="image-popup" title="Spagetti">
+                                   <img src="images/yayla.jpg" class="img-responsive" alt="">
+
+                                   <div class="menu-info">
+                                        <div class="menu-item">
+                                             <h3>Yayla çorbası</h3>
+                                             <p>Çorba / Ekmek / Söğüş</p>
+                                        </div>
+
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!-- MENU THUMB -->
+                         <div class="menu-thumb">
+                              <a href="images/menu-image3.jpg" class="image-popup" title="Spagetti">
+                                   <img src="images/ezogelin.jpg" class="img-responsive" alt="">
+
+                                   <div class="menu-info">
+                                        <div class="menu-item">
+                                             <h3>Ezogelin Çorbası</h3>
+                                             <p>Çorba / Ekmek / Söğüş</p>
+                                        </div>
+
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!-- MENU THUMB -->
+                         <div class="menu-thumb">
+                              <a href="images/menu-image3.jpg" class="image-popup" title="Spagetti">
+                                   <img src="images/domates.jpg" class="img-responsive" alt="">
+
+                                   <div class="menu-info">
+                                        <div class="menu-item">
+                                             <h3>Domates Çorbası</h3>
+                                             <p>Çorba / Ekmek / Söğüş</p>
+                                        </div>
+
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!-- MENU THUMB -->
+                         <div class="menu-thumb">
+                              <a href="images/menu-image3.jpg" class="image-popup" title="Spagetti">
+                                   <img src="images/mercimek.jpg" class="img-responsive" alt="">
+
+                                   <div class="menu-info">
+                                        <div class="menu-item">
+                                             <h3>Mercimek Çorbası</h3>
+                                             <p>Çorba / Ekmek / Söğüş</p>
+                                        </div>
+
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!-- MENU THUMB -->
+                         <div class="menu-thumb">
+                              <a href="images/menu-image3.jpg" class="image-popup" title="Spagetti">
+                                   <img src="images/iskembe.jpg" class="img-responsive" alt="">
+
+                                   <div class="menu-info">
+                                        <div class="menu-item">
+                                             <h3>İşkembe Çorbası</h3>
+                                             <p>Çorba / Ekmek / Söğüş</p>
+                                        </div>
+
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!-- MENU THUMB -->
+                         <div class="menu-thumb">
+                              <a href="images/menu-image3.jpg" class="image-popup" title="Spagetti">
+                                   <img src="images/beyran.jpg" class="img-responsive" alt="">
+
+                                   <div class="menu-info">
+                                        <div class="menu-item">
+                                             <h3>Beyran Çorbası</h3>
+                                             <p>Çorba / Ekmek / Söğüş</p>
+                                        </div>
+
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+                    
+
+
+               </div>
+          </div>
+     </section>
+
+
+     <!-- TESTIMONIAL -->
+     <section id="testimonial" data-stellar-background-ratio="0.5">
+          <div class="overlay"></div>
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+                              <h2>Görüşler</h2>
+                         </div>
+                    </div>  
+
+                    <div class="col-md-offset-2 col-md-8 col-sm-12">
+                         <div class="owl-carousel owl-theme">
+                              <div class="item">
+                                   <p>Gururla protein velit aliquet tarafından Güzeldi. Yumuşak aydınlatma hakkında, Pozitiflik var.</p>
+                                        <div class="tst-author">
+                                             <h4>Dijital Carlson</h4>
+                                             <span>Mevcut olandan daha fazla lezzetli</span>
+                                        </div>
+                              </div>
+
+                              <div class="item">
+                                   <p>Gururla protein velit aliquet tarafından Güzeldi. Yumuşak aydınlatma hakkında, Pozitiflik var.</p>
+                                        <div class="tst-author">
+                                             <h4>Johnny Stephen</h4>
+                                             <span>Mevcut olandan daha fazla lezzetli</span>
+                                        </div>
+                              </div>
+
+                              <div class="item">
+                                   <p>Gururla protein velit aliquet tarafından Güzeldi. Yumuşak aydınlatma hakkında, Pozitiflik var.</p>
+                                        <div class="tst-author">
+                                             <h4>Jessie White</h4>
+                                             <span>Mevcut olandan daha fazla lezzetli</span>
+                                        </div>
+                              </div>
+
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>  
+
+
+     <!-- CONTACT -->
+     <section id="contact" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+	<!-- How to change your own map point
+            1. Go to Google Maps
+            2. Click on your location point
+            3. Click "Share" and choose "Embed map" tab
+            4. Copy only URL and paste it within the src="" field below
+	-->
+                    <div class="wow fadeInUp col-md-6 col-sm-12" data-wow-delay="0.4s">
+                         <div id="google-map">
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8505.943585419478!2d29.0351825680209!3d41.08417792454831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6b5d9378a52d08a0!2sEtiler%20Sar%C4%B1han%20Gusto!5e0!3m2!1str!2str!4v1658910306413!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                         </div>
+                    </div>    
+
+                    <div class="col-md-6 col-sm-12">
+
+                         <div class="col-md-12 col-sm-12">
+                              <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+                                   <h2>Bizimle İletişime Geçin</h2>
+                              </div>
+                         </div>
+
+                         <!-- CONTACT FORM -->
+                         <form action="#" method="post" class="wow fadeInUp" id="contact-form" role="form" data-wow-delay="0.8s">
+
+                              <!-- IF MAIL SENT SUCCESSFUL  // connect this with custom JS -->
+                              <h6 class="text-success">Your message has been sent successfully.</h6>
+                              
+                              <!-- IF MAIL NOT SENT -->
+                              <h6 class="text-danger">E-mail must be valid and message must be longer than 1 character.</h6>
+
+                              <div class="col-md-6 col-sm-6">
+                                   <input type="text" class="form-control" id="cf-name" name="name" placeholder="Adınız Soyadınız">
+                              </div>
+
+                              <div class="col-md-6 col-sm-6">
+                                   <input type="email" class="form-control" id="cf-email" name="email" placeholder="Email adresiniz">
+                              </div>
+
+                              <div class="col-md-12 col-sm-12">
+                                   <input type="text" class="form-control" id="cf-subject" name="subject" placeholder="Konu">
+
+                                   <textarea class="form-control" rows="6" id="cf-message" name="message" placeholder="Projeniz hakkında bilgi verin"></textarea>
+
+                                   <button type="submit" class="form-control" id="cf-submit" name="submit">Mesaj Gönder</button>
+                              </div>
+                         </form>
+                    </div>
+
+               </div>
+          </div>
+     </section>          
+
+
+     <!-- FOOTER -->
+     <footer id="footer" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-3 col-sm-8">
+                         <div class="footer-info">
+                              <div class="section-title">
+                                   <h2 class="wow fadeInUp" data-wow-delay="0.2s">Address</h2>
+                              </div>
+                              <address class="wow fadeInUp" data-wow-delay="0.4s">
+                                   <p>Etiler, Nispetiye Cd No:109, 34337 Beşiktaş/İstanbul</p>
+                              </address>
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-8">
+                         <div class="footer-info">
+                              <div class="section-title">
+                                   <h2 class="wow fadeInUp" data-wow-delay="0.2s">Rezervasyon</h2>
+                              </div>
+                              <address class="wow fadeInUp" data-wow-delay="0.4s">
+                                   <p>(0212) 358 48 48</p>
+                                   <p><a href="mailto:info@company.com">info@sarihanchefetiler.com</a></p>
+                                   
+                              </address>
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-8">
+                         <div class="footer-info footer-open-hour">
+                              <div class="section-title">
+                                   <h2 class="wow fadeInUp" data-wow-delay="0.2s">Çalışma Saatlerimiz</h2>
+                              </div>
+                              <div class="wow fadeInUp" data-wow-delay="0.4s">
+                                   <p>7 / 24 Açığız.</p>
+
+
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-8">
+                         <ul class="wow fadeInUp social-icon" data-wow-delay="0.4s">
+                              <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                              <li><a href="#" class="fa fa-twitter"></a></li>
+                              <li><a href="#" class="fa fa-instagram"></a></li>
+                              <li><a href="#" class="fa fa-google"></a></li>
+                         </ul>
+
+                         <div class="wow fadeInUp copyright-text" data-wow-delay="0.8s"> 
+                              <p><br>&copy; 2022 Sarıhan Chef  <br>Tüm hakları Saklıdır.
+                              
+                              <br><br>Designer By Ahmet Coşkun.</p>
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+
+     <!-- SCRIPTS -->
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/jquery.stellar.min.js"></script>
+     <script src="js/wow.min.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/jquery.magnific-popup.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
+
+</body>
+</html>
